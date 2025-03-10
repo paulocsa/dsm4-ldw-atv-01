@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="text-center mb-4">Personagens de One Piece</h2>
+
+<div class="row">
+    {% for personagem in personagens_api %}
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ personagem.id }} - {{ personagem.name }}</h5>
+                <p class="card-text"><strong>Idade:</strong> {{ personagem.age }}</p>
+                <p class="card-text"><strong>Tamanho:</strong> {{ personagem.size }}</p>
+                <p class="card-text"><strong>Recompensa:</strong> {{ personagem.bounty }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

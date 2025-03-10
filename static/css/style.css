@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('https://example.com/one-piece-background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar {
+    background-color: #343a40;
+  }
+  
+  .navbar .navbar-brand {
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: #ffcc00;
+    font-size: 1.1rem;
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: #ff6600;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffcc00;
+  }
+  
+  a:hover {
+    color: #ff6600;
+  }
+  .container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: #ffcc00;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  .btn {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .btn:hover {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  #index-page {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #ffcc00; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #index-page h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Comic Sans MS', sans-serif;
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+  
+  #index-page p {
+    font-size: 1.1rem;
+    color: #ffcc00;
+    line-height: 1.8;
+  }
+  
+  

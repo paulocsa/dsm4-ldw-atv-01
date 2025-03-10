@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventure Time - Flask App</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container text-center mt-5">
-        <h1>Bem-vindo à Aplicação Flask - Adventure Time</h1>
-        <p>Escolha uma opção abaixo:</p>
-        
-        <div class="mt-4">
-            <a href="/lista" class="btn btn-primary">Lista de Personagens</a>
-            <a href="/tabela" class="btn btn-success">Tabela de Personagens</a>
-            <a href="/api" class="btn btn-warning">Consumo da API</a>
-        </div>
-    </div>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="index-page">
+    <h2>Esta é a página inicial</h2>
+    <p>Bem-vindo ao mundo dos piratas! Explore nossos personagens e tripulações.</p>
+  </div>
+{% endblock content %}

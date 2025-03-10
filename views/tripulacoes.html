@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Tripulações</h2>
+
+<form method="POST">
+  <label for="nome_tripulacao">Nome da Tripulação:</label>
+  <input type="text" name="nome_tripulacao" id="nome_tripulacao" required />
+  <label for="capitao">Capitão:</label>
+  <input type="text" name="capitao" id="capitao" required />
+  <label for="membros">Membros (separados por vírgula):</label>
+  <input type="text" name="membros" id="membros" required />
+  <button type="submit" class="btn btn-success" style="background-color: #28a745; border: none; padding: 8px 16px; font-size: 14px; font-weight: bold; border-radius: 5px; cursor: pointer;">
+    Adicionar
+  </button>
+  
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome da Tripulação</th>
+      <th>Capitão</th>
+      <th>Membros</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for tripulacao in tripulacoes %}
+    <tr>
+      <td>{{ tripulacao.nome_tripulacao }}</td>
+      <td>{{ tripulacao.capitao }}</td>
+      <td>{{ tripulacao.membros | join(", ") }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
